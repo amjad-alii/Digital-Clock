@@ -1,0 +1,108 @@
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.hero{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(#09203f,#537895);
+    color: #fff;
+    position: relative;
+}
+
+.container{
+    width: 800px;
+    height: 180px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+}
+
+.clock{
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#fdfbfb , #ebedee);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(40px);
+}
+
+h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 3rem;
+    font-size: 3.5rem;
+    font-family: "Playwrite HU", cursive;
+    text-shadow: 0 2px 13px rgb(255, 251, 251);
+    color: rgb(7, 7, 1);
+}
+
+/*.container::before{
+    content: '';
+    width: 180px;
+    height: 180px;
+    background: #d6efc1;
+    border-radius: 5px;
+    position: absolute;
+    left: -70px;
+    top: -80px;
+    z-index: -1;
+}
+
+.container::after{
+    content: '';
+    width: 180px;
+    height: 180px;
+    background: #ed6597d3;
+    backdrop-filter: blur(2px);
+    border-radius: 50%;
+    position: absolute;
+    right: -70px;
+    bottom: -80px;
+    z-index: -1;
+}*/
+
+.clock span{
+    font-size: 80px;
+    width: 110px;
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    color: black;
+}
+
+.clock span::after{
+    font-size: 18px;
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-shadow: 0 0 5px grey;
+}
+
+#hrs::after{
+    content: 'HOURS';
+}
+
+#min::after{
+    content: 'MINS';
+}
+
+#sec::after{
+    content: 'SECS';
+}
+
+
+#ampm {
+  font-size: 40px;
+  font-weight: bold;
+  color: black;
+  text-shadow: 0 0 5px grey;
+}
